@@ -1,0 +1,12 @@
+extends layout
+block content
+  h1= title
+  form(action="/register" )
+    each name,index in ['nombre','apellido','edad']
+     label=name
+     br
+     input(type="text" name="#{name}")
+     br
+    input(type='submit' )
+    
+    

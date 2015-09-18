@@ -1,0 +1,9 @@
+extends layout
+block titule
+  h1= title
+block content
+  p Welcome to #{title}
+  ul.personas
+  each persona in personas
+   li=persona.nombre
+  
